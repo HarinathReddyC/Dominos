@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.493">
+    <testcase classname="Verify order online dominos website Functionality" name="Order online pizza functionality" time="3.348">
+        <failure message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114&#10;Current browser version is 125.0.6422.113 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe &#10;Host info: host: 'DESKTOP-SN7KJ5S', ip: '192.168.0.156'&#10;Build info: version: '4.13.0', revision: 'ba948ece5b*'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[Given Open browser and enter url............................................skipped
+And Click on order online now...............................................skipped
+And Enter your delivery address and pick on address.........................skipped
+When Click on veg pizza menu................................................skipped
+And Select on Margherita pizza quantity of two..............................skipped
+And Verify the Margherita pizza value.......................................skipped
+And Select on primavera Gourmet Pizza quantity two..........................skipped
+And Verify the primavera Gourmet Pizza value................................skipped
+And Select on Peppy Paneer pizza quantity of two............................skipped
+And Verify the Peppy Paneer Pizza value.....................................skipped
+And Verify subtotal value only pizzas.......................................skipped
+Then Explore menu...........................................................skipped
+And Click on beverages add pepsi into cart..................................skipped
+And Verify the Pepsi 475ml Value............................................skipped
+And add pepsi 475ml quantity of twelve......................................skipped
+And Verify subtotal value total cart........................................skipped
+And Remove pepsi 475ml quantity of six into cart............................skipped
+And Remove Margherita pizza quantity of one into cart.......................skipped
+And Verify subtotal final cart value........................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 125.0.6422.113 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-SN7KJ5S', ip: '192.168.0.156'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+	at com.Dominos.utils.HelperClass.<init>(HelperClass.java:27)
+	at com.Dominos.utils.HelperClass.setUpDriver(HelperClass.java:50)
+	at com.Dominos.definitions.DominosTest.setUp(DominosTest.java:27)
+]]></failure>
+    </testcase>
+</testsuite>
